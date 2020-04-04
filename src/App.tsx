@@ -4,7 +4,7 @@ import { PetListWithData } from './components';
 
 function App() {
   return (
-    <div className="App">
+    <div className="agl-test">
       <PetListWithData petTypeFilter={'Cat'} />
     </div>
   );
