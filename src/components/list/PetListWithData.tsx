@@ -23,8 +23,8 @@ class PetListWithData extends React.Component<Props, State> {
         const filter = this.props.petTypeFilter
         try {
             const data = await loadData('people')
-            let maleOwnerPets: Pet[] = []
-            let femaleOwnerPets: Pet[] = []
+            const maleOwnerPets: Pet[] = []
+            const femaleOwnerPets: Pet[] = []
             if (data) {
                 data.map(owner => {
                     if (owner.pets) {
